@@ -4,12 +4,14 @@ import com.example.chuyenbay.entity.ChuyenBay;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
 @Repository
 public class ChuyenBayRepository {
     public static final String HASH_KEY = "chuyenbay";
+
     @Autowired
     private RedisTemplate template;
 

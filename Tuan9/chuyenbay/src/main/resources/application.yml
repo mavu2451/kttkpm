@@ -1,0 +1,12 @@
+server:
+  port: 8082
+retry:
+  instances:
+    ChuyenBay_T:
+      registerHealthIndicator: true
+      maxRetryAttempts: 5
+      waitDuration: 10s
+spring:
+  cloud:
+    config:
+      enabled: false
